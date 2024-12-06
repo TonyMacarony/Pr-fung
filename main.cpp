@@ -11,6 +11,10 @@ using namespace std;
 
 #pragma comment(lib,"ws2_32.lib")
 
+int port;
+string IP;
+string payload;
+string socket_typ;
 
 int main()
 {
@@ -63,7 +67,15 @@ int main()
 
     cout << "Server gestartet." << endl;
 
-    while (true) {
+    while (true) { 
+        cout << "Port eingeben: " << endl;
+        cin >> port;
+        cout << "IP eingeben: " << endl;
+        cin >> IP;
+        cout << "Payload eingeben: " << endl;
+        cin >> payload;
+        cout << "Socket typ eingeben: " << endl;
+        cin >> socket_typ;
 
         cout << "Warte auf Verbindung." << endl;
         //Verbindung akzeptieren
